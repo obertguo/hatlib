@@ -1,0 +1,62 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Include": "SD.h",
+    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src"
+  },
+  {
+    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\SDWrapper.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\File.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\SD.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
+    "Include": "SPI.h",
+    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\SdFile.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\SdVolume.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
