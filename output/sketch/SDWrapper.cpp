@@ -40,17 +40,12 @@ void SDWrapper::readFile(String filename, CRGB* pixels){
         char c = (char)patternFile.read();
         if(c == ',' || c == '\n'){
             pixels[idx][rgbIdx] = currNum.toInt(); 
-
-            if(c == '\n') {
-              ++idx;
-            }
-            
             rgbIdx = (rgbIdx + 1) % 3;
             currNum = "";
+            
+            if(c == '\n') ++idx;
         }
-        else{
-            currNum += c;
-        }
+        else currNum += c;
       }
       patternFile.close();
     }
@@ -89,7 +84,7 @@ bool SDWrapper::initialize(){
     if(!SD.begin(CHIPSELECT)){
         Serial.println("Failed to initialize SD card. Things to check:");
         Serial.println("1. Is a card inserted? Is it in the right format? FAT16 or FAT32?");
-        Serial.println("2. Double check your wiring. MISO = 12; MOSI = 11; SCK = 13; CS = 10; ");
+        Serial.println("2. Double check your wiring. MISO = 50; MOSI = 51; SCK = 52; CS = 53; ");
         return false;
     }
     

@@ -49,5 +49,8 @@ c:\Users\guoob\Desktop\Hat\hat\output\sketch\hatlib.cpp.o: \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi_bitbang.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/chipsets.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\SDWrapper.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\LiquidCrystal\src/LiquidCrystal.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\HatConstants.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\PinConstants.h
