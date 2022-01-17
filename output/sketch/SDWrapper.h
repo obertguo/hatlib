@@ -1,17 +1,17 @@
-#line 1 "x:\\My Drive\\Apps\\Hat\\hat\\SDWrapper.h"
+#line 1 "c:\\Users\\guoob\\Desktop\\Hat\\hat\\SDWrapper.h"
 #ifndef SDWrapper_h
 #define SDWrapper_h
 #pragma once
 
 #include "Arduino.h"
-
+#include <FastLED.h>
 
 /*
-SD pins 
-MISO = 12;
-MOSI = 11;
-SCK = 13;
-CS = 10; 
+For reference: SPI pins for Arduino Mega. https://www.arduino.cc/en/reference/SPI
+MISO = 50;
+MOSI = 51;
+SCK = 52;
+CS = 53; 
 */
 
 class SDWrapper{
@@ -19,7 +19,7 @@ class SDWrapper{
         SDWrapper();
         
         String* readRootDirectory();
-        void readFile(String filename);
+        void readFile(String filename, CRGB* pixels);
     private:
         bool initialize();
         bool initialized;

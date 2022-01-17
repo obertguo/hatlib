@@ -1,14 +1,14 @@
-x:\My\ Drive\Apps\Hat\hat\output\libraries\SPI\SPI.cpp.o: \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\libraries\SPI\src\SPI.cpp \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\libraries\SPI\src\SPI.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/Arduino.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/binary.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/WCharacter.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/WString.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/HardwareSerial.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/Stream.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/Print.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/Printable.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/USBAPI.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\cores\arduino/Arduino.h \
- X:\My\ Drive\Apps\arduino\arduino-1.8.16\hardware\arduino\avr\variants\standard/pins_arduino.h
+c:\Users\guoob\Desktop\Hat\hat\output\libraries\SPI\SPI.cpp.o: \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src\SPI.cpp \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src\SPI.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/binary.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/WCharacter.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/WString.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/HardwareSerial.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Stream.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h

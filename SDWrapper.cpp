@@ -1,8 +1,9 @@
 #include "SDWrapper.h"
 #include <SD.h>
 
-const int chipSelect = 10;
-const int maxPatterns = 10;
+#define CHIPSELECT 53 //SPI chip select pin
+#define MAXPATTERNS 6 // The maximum pattern files we will load. Can be set to whatever positive integer you'd like of reasonable size before the Arduino encounters memory issues.
+#define NUMPIXELS 512 //Hat contains 8 x 64 pixels
 
 SDWrapper::SDWrapper(){
     this->initialized = this->initialize();
@@ -13,58 +14,50 @@ bool SDWrapper::isInitialized(){
         Serial.println("Please initialize the SD card first!");
         return false;
     }
-
     return true;
 }
 
-void SDWrapper::readFile(String filename){
+void SDWrapper::readFile(String filename, CRGB* pixels){
     if(!this->isInitialized()) return;
     
     //Quick file extension verification
-    // if(!filename.endsWith(".HAT")) return;
+    if(!filename.endsWith(".HAT")) return;
 
     File patternFile = SD.open(filename);
-    
+
     if(!patternFile) {
         Serial.println("Error opening file.");
         return;
     }
 
-    uint8_t data[8 * 64] = {}; //0 fill
     int idx = 0;
-
+    int rgbIdx = 0;
     String currNum = "";
-    uint8_t currentPixel = 
 
-    //convert .hat values into 8x64 byte arraya 
-    while(patternFile.available() && idx < sizeof(data)){
-        char c = patternFile.read();
+    //Extract RGB data from hat file, and store the values in the pixels array.
+    while(patternFile.available() && idx < NUMPIXELS){
+        char c = (char)patternFile.read();
+        if(c == ',' || c == '\n'){
+            pixels[idx][rgbIdx] = currNum.toInt(); 
 
-        if(c.toInt() == 0 && c != '0') {
-          data[idx] = currNum.toInt(); 
-          ++idx;
-          currNum = "";
-          continue;
+            if(c == '\n') {
+              ++idx;
+            }
+            
+            rgbIdx = (rgbIdx + 1) % 3;
+            currNum = "";
         }
-
-        currNum += c;
+        else{
+            currNum += c;
+        }
+      }
+      patternFile.close();
     }
-
-    data[idx] = currNum.toInt(); //Don't forget to add the last number into the list after the loop ends
-
-    for(auto el : data){
-      Serial.println(el);
-    }
-      
-
-    patternFile.close();
-}
 
 //Return a static reference to a String ref array of .hat filenames
 String* SDWrapper::readRootDirectory(){
-    static String patternFiles[maxPatterns]; 
+    static String patternFiles[MAXPATTERNS]; 
     int idx = 0; //keeps track of curr idx when adding file name to array
-
 
     if(!this->isInitialized()) 
         return patternFiles;
@@ -72,13 +65,13 @@ String* SDWrapper::readRootDirectory(){
     File root = SD.open("/");    
     
     //Continue finding hat files until max pattern is reached
-    while(idx < maxPatterns){ 
+    while(idx < MAXPATTERNS){ 
         File entry = root.openNextFile();
         if(!entry) break;
 
         if(!entry.isDirectory()){
             String file = entry.name();
-            
+
             if(file.endsWith(".HAT")){
                 patternFiles[idx] = file;
                 ++idx;
@@ -86,21 +79,13 @@ String* SDWrapper::readRootDirectory(){
         }
         entry.close();
     }
-
-    //Display hat files
-    // for(int i = 0; i < maxPatterns; ++i){
-    //         if(patternFiles[i].length() == 0) continue;
-    //         Serial.println(patternFiles[i]);
-    //         Serial.println(i);
-    // }
-
     return patternFiles;
 }
 
 bool SDWrapper::initialize(){
     Serial.println("Initializing SD card...");
 
-    if(!SD.begin(chipSelect)){
+    if(!SD.begin(CHIPSELECT)){
         Serial.println("Failed to initialize SD card. Things to check:");
         Serial.println("1. Is a card inserted? Is it in the right format? FAT16 or FAT32?");
         Serial.println("2. Double check your wiring. MISO = 12; MOSI = 11; SCK = 13; CS = 10; ");

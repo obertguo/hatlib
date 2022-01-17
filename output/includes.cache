@@ -2,60 +2,135 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\cores\\arduino"
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\variants\\standard"
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega"
   },
   {
-    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Include": "FastLED.h",
+    "Includepath": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Include": "LiquidCrystal.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\libraries\\LiquidCrystal\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\SDWrapper.cpp",
     "Include": "SD.h",
-    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src"
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src"
   },
   {
-    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\hat.ino.cpp",
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\SDWrapper.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "x:\\My Drive\\Apps\\Hat\\hat\\output\\sketch\\SDWrapper.cpp",
+    "Sourcefile": "c:\\Users\\guoob\\Desktop\\Hat\\hat\\output\\sketch\\hatlib.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\File.cpp",
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\FastLED.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\SD.cpp",
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\bitswap.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\colorpalettes.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\colorutils.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\hsv2rgb.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\lib8tion.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\noise.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\platforms\\esp\\32\\clockless_rmt_esp32.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\platforms.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\power_mgt.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\guoob\\Documents\\Arduino\\libraries\\FastLED\\src\\wiring.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\LiquidCrystal\\src\\LiquidCrystal.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\File.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\SD.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
     "Include": "SPI.h",
-    "Includepath": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\libraries\\SPI\\src"
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src"
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\utility\\Sd2Card.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\SdFile.cpp",
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\utility\\SdFile.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\libraries\\SD\\src\\utility\\SdVolume.cpp",
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src\\utility\\SdVolume.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "X:\\My Drive\\Apps\\arduino\\arduino-1.8.16\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
     "Include": "",
     "Includepath": null
   }
