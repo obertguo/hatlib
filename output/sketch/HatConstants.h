@@ -13,3 +13,5 @@ enum PIXEL_SHIFT_DIRECTION{
 
 #define LCD_BACKLIGHT_VAL 255
 #define LCD_CONTRAST_VAL 108
+
+#define CHIP_SELECT_PIN 53 //SPI chip select pin for SD card module
