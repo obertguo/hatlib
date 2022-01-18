@@ -16,7 +16,6 @@ CS = 53;
 class SDWrapper{
     public:
         SDWrapper();
-        
         String* readRootDirectory();
         void readFile(String filename, CRGB* pixels);
     private:

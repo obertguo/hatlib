@@ -49,6 +49,7 @@ c:\Users\guoob\Desktop\Hat\hat\output\sketch\SDWrapper.cpp.o: \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi_bitbang.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/chipsets.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\HatConstants.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\SD\src/SD.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\SD\src/utility/SdFat.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\SD\src/utility/Sd2Card.h \

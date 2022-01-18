@@ -11,7 +11,7 @@ c:\Users\guoob\Desktop\Hat\hat\output\sketch\hat.ino.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\mega/pins_arduino.h \
- c:\Users\guoob\Desktop\Hat\hat\output\sketch\SDWrapper.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\hatlib.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/FastLED.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/cpp_compat.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/FastLED.h \
@@ -49,6 +49,7 @@ c:\Users\guoob\Desktop\Hat\hat\output\sketch\hat.ino.cpp.o: \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/fastspi_bitbang.h \
  C:\Users\guoob\Documents\Arduino\libraries\FastLED\src/chipsets.h \
- c:\Users\guoob\Desktop\Hat\hat\output\sketch\hatlib.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\SDWrapper.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\LiquidCrystal\src/LiquidCrystal.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h \
+ c:\Users\guoob\Desktop\Hat\hat\output\sketch\HatConstants.h
