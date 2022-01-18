@@ -10,7 +10,7 @@ HatLib::HatLib() {
 	pinMode(LCD_CONTRAST_PIN, OUTPUT);
 
 	FastLED.addLeds<WS2812, PIXEL_DATA_PIN, PIXEL_COLOUR_ORDER>(ledPixelBuffer, NUM_PIXELS);
-	FastLED.setBrightness(255);
+	FastLED.setBrightness(pixelBrightness);
 
 	lcd.begin(LCD_COLS, LCD_ROWS);
 	lcd.clear();
