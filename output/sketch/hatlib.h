@@ -13,6 +13,7 @@ class HatLib{
         void displayMenu();
         void readChangeImageButton();
         void readChangeShiftModeButton();
+        void readChangePixelBrightnessButton();
 
     private:
         CRGB (*originalPixels); //Keep a reference to a CRGB array of length 512. This is so that for whatever reason, someone could load some other rgb data outside the scope of this class, and update the hat design that way.
@@ -29,6 +30,8 @@ class HatLib{
         CRGB pixels[NUM_PIXELS]; //Pixel buffer that stores RGB pixel information obtained from reading a .HAT file on the SD card.
         uint8_t numHatFiles = 0; //Keeps track of how many HAT files are on the SD card's root dir. 
         uint8_t currImageIdx = 0; //Keeps track of the current file being used.
+
+        uint8_t pixelBrightness = 0;
 
         SDWrapper* sd; //The SD wrapper likes to be initialized on the heap for some reason. Probably has something to do with the inner workings of the SD library? Not a huge deal I suppose. 
 };

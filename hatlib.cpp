@@ -10,7 +10,7 @@ HatLib::HatLib() {
 	pinMode(LCD_CONTRAST_PIN, OUTPUT);
 
 	FastLED.addLeds<WS2812, PIXEL_DATA_PIN, PIXEL_COLOUR_ORDER>(ledPixelBuffer, NUM_PIXELS);
-	FastLED.setBrightness(PIXEL_BRIGHTNESS);
+	FastLED.setBrightness(255);
 
 	lcd.begin(LCD_COLS, LCD_ROWS);
 	lcd.clear();
@@ -61,6 +61,8 @@ void HatLib::displayMenu(){
 
 	lcd.setCursor(0, 1);
 	lcd.print(currShiftDirectionName);
+	lcd.setCursor(12, 1);
+	lcd.print(pixelBrightness);
 }
 
 void HatLib::updatePixels(CRGB (*newPixels)){
@@ -100,6 +102,13 @@ void HatLib::readChangeShiftModeButton(){
 		currShiftDirection = NO_SHIFT;
 	}
 	//To Do: account for debounce
+}
+
+void HatLib::readChangePixelBrightnessButton(){
+	if(abs(analogRead(BUTTON) - CHANGE_PIXEL_BRIGHTNESS_ADC_VAL) <= 10){
+		pixelBrightness = getPositiveModulo(pixelBrightness + 10, 255); //increase bringtness by 10 each press and wrap around at 255.
+		FastLED.setBrightness(pixelBrightness);
+	}
 }
 
 void HatLib::displayPixels(){

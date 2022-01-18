@@ -11,9 +11,10 @@ void setup(){
 }
 
 void loop(){
-    delay(100 /* The number of microseconds per shift*/);
+    delay(70 /* The number of microseconds per shift*/);
     hatlib->displayPixels();
     hatlib->displayMenu();
     hatlib->readChangeImageButton();
     hatlib->readChangeShiftModeButton();
+    hatlib->readChangePixelBrightnessButton();
 }

@@ -15,4 +15,5 @@ void loop(){
     hatlib->displayMenu();
     hatlib->readChangeImageButton();
     hatlib->readChangeShiftModeButton();    
+    hatlib->readChangePixelBrightnessButton();
 }
