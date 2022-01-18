@@ -6,7 +6,6 @@
 class HatLib{
     public: 
         HatLib();
-        void initialize();
         void updatePixels(CRGB (*newPixels));
         void displayPixels();
         void displayMenu();
